@@ -2,8 +2,7 @@
 name = "hasher"
 version = "0.0.1"
 description=""
-authors = ["Rishabh <rishabhanandxz@gmail.com>"]
-license = "MIT"
+authors = ["Rishabh <thefenrislycaon@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -28,6 +27,3 @@ disable=[
     "missing-function-docstring",
     "missing-module-docstring"
 ]
-
-[tool.poetry2conda]
-name = "hasher"

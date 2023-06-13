@@ -12,7 +12,9 @@ from base64 import (
     b85decode,
     b85encode,
 )
+
 from binascii import hexlify, unhexlify
+
 from hashlib import (
     blake2b,
     blake2s,

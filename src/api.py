@@ -1,4 +1,4 @@
-from .engines import DECODING_ALGORITHMS, ENCODING_ALGORITHMS, HASHING_ALGORITHMS
+from .algorithms import DECODING_ALGORITHMS, ENCODING_ALGORITHMS, HASHING_ALGORITHMS
 
 
 def encoding_algos() -> list[str]:

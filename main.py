@@ -1,9 +1,3 @@
-"""
-Date: 10/18/2022
-LICENCE: MIT
-Language: Python3.10
-"""
-
 from time import sleep
 
 from colorama import Fore as f
@@ -21,9 +15,10 @@ from src.api import (
 from src.core import add_command, run_shell
 
 STARTUP_DOC = f"""{f.YELLOW}
+    HEDShell
     LICENCE: MIT
     Language: {f.CYAN}Python3.10{f.YELLOW}
-    Description: A tool to hash, encode, decode text.
+    Description: A tool to hash, encode, decode text
     Commands: hash, encode, decode, help, exit
 """
 
@@ -50,14 +45,14 @@ HELP_DOC = """
 """
 
 
-def exit_src(_: list[str]) -> None:
+def exit_shell(_: list[str]) -> None:
     for i in [".", "..", "..."]:
         print(f"  Exiting{i}", end="\r")
         sleep(1)
     exit(0)
 
 
-def help_src(_: list[str]) -> None:
+def help_shell(_: list[str]) -> None:
     print(HELP_DOC)
 
 
@@ -101,8 +96,8 @@ def process_encode(args: list[str]) -> None:
 
 
 def main() -> None:
-    add_command("exit", exit_src)
-    add_command("help", help_src)
+    add_command("exit", exit_shell)
+    add_command("help", help_shell)
     add_command("hash", process_hash)
     add_command("encode", process_encode)
     add_command("decode", process_decode)
